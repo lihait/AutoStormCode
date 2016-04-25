@@ -1,0 +1,15 @@
+  //必要的变量声明；部分变量需要用户来定义
+  private OutputCollector collector;
+  public void cleanup(){
+    System.out.println(“please input your operation”);
+}
+  public void execute(Tuple input){
+    System.out.println(“please input your operation”);
+}
+  public void prepare(Map stormConf, TopologyContext context, OutputCollector collector) {
+    System.out.println(“please input your operation”);
+}
+  public void declareOutputFields(OutputFieldsDeclarer declarer) {
+    declarer.declare(new Fields("字段"));
+}
+}

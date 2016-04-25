@@ -1,0 +1,7 @@
+try {
+		StormSubmitter.submitTopology(args[0], config,  builder.createTopology());//提交topology
+		    } catch (Exception e) {
+				e.printStackTrace();
+			}
+		} else {
+          //用户没有输入topology的名字，则认为是本地调试模式

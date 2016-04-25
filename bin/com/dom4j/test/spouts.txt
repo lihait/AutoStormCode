@@ -1,0 +1,40 @@
+//必要的变量声明；部分变量需要用户来定义
+private SpoutOutputCollector collector;
+private boolean completed = false;
+private TopologyContext context;
+    //必要的函数定义
+	public boolean isDistributed() {
+       return false;
+}
+    public void activate() {}
+	
+    public void deactivate() {}
+    
+    public void ack(Object msgId) {          
+     System.out.println("OK:"+msgId);         
+}
+
+    public void close() {}
+
+    public void fail(Object msgId) {
+     System.out.println("FAIL:"+msgId);
+}
+
+    public void declareOutputFields(OutputFieldsDeclarer declarer) {
+     declarer.declare(new Fields("字段"));
+    //字段可以从图上获取
+    //该字段即为source_channel=”data”的线中的sink_node_id对应的节点的title值，即node[sink_node_id]
+}
+    //需要用户自己实现
+    public void nextTuple(){
+     System.out.println(“please input your operation”);
+}
+    //需要用户自己实现
+   public void open(Map conf, TopologyContext context, SpoutOutputCollector  collector){
+    System.out.println(“please input your operation”);
+}
+   public Map<String, Object> getComponentConfiguration() {
+	// TODO Auto-generated method stub
+	return null;
+}
+}

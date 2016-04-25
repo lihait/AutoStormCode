@@ -1,0 +1,6 @@
+    //配置
+	Config conf = new Config();
+	conf.setDebug(true);
+	//运行（分布式模式和本地模式）
+	if(args != null && args.length >= 1){
+	//用户输入了topology的相应名字等参数，则属于分布式部署状态，会把topology部署到多个计算节点中

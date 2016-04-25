@@ -1,0 +1,5 @@
+程序运行说明：
+1.将整个工程直接导入到eclipse中。
+2.在D盘目录下新建一个名为stormCode的文件夹。
+3.在stormCode文件夹下新建三个文件夹，分别命名为main、bolts、spouts。然后在stormCode文件夹下再新建一个txt文件，文件的内容为两个任意的数字，一个数字占一行。
+4.编译运行UI.java。

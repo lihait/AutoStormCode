@@ -1,0 +1,11 @@
+//必要的头文件
+import backtype.storm.Config;
+import backtype.storm.LocalCluster;
+import backtype.storm.StormSubmitter;
+import backtype.storm.topology.TopologyBuilder;
+import backtype.storm.tuple.Fields;
+import backtype.storm.utils.Utils;
+public class Topology {
+	public static void main(String[] args) throws Exception {
+	//定义拓扑
+	TopologyBuilder builder = new TopologyBuilder();
